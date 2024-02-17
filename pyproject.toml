@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "MY_APP_NAME"
+version = "0.0.1"
+description = ""
+authors = ["50bytes.dev <50bytes.dev@gmail.com>"]
+packages = []
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+fastapi = "0.109.2"
+SQLAlchemy = "2.0.27"
+sqlmodel = { git = "https://github.com/tiangolo/sqlmodel.git", rev = "refs/pull/801/merge" }
+sqladmin = "0.16.0"
+alembic = "1.13.1"
+asyncpg = "0.29.0"
+uvicorn = "0.27.1"
+pydantic = { version = "2.6.1", extras = ["dotenv", "email"] }
+miniopy-async = "1.15"
+watchfiles = "0.19.0"
+pydantic-settings = "2.2.0"
+pydantic-extra-types = "2.5.0"
+python-dateutil = "^2.8.2"
+alembic-postgresql-enum = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
